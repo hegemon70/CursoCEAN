@@ -4,7 +4,9 @@
   "description": "Un descripcion",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "morgan": "^1.7.0",
     "node-inspector": "^0.12.8",
     "node-monitor": "^0.3.11",
-    "yargs": "^6.3.0"
-  }
+    "yargs": "^6.3.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
